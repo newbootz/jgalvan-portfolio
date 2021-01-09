@@ -1,5 +1,5 @@
 import react from "react";
-import image from "../cat.jpeg"
+import image from "../octocatzz.jpg"
 
 export default function Home() {
     return (
