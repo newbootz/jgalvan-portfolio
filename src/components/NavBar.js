@@ -14,17 +14,17 @@ export default function NavBar() {
                     </NavLink>
                     <NavLink to="/post" 
                     activeClassName="text-green-400 bg-indigo-700"
-                    className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-yellow-400">
+                    className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-red-400">
                         Blog Posts
                     </NavLink>
                     <NavLink to="/project" 
                     activeClassName="text-green-400 bg-indigo-700"
-                    className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-yellow-400">
+                    className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-red-400">
                         Projects
                     </NavLink>
                     <NavLink to="/about" 
                     activeClassName="text-green-400 bg-indigo-700"
-                    className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-yellow-400">
+                    className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-red-400">
                         About Me
                     </NavLink>
                 </nav>

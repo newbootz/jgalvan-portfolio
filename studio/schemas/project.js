@@ -36,6 +36,18 @@ export default {
             type: "url"
         },
         {
+            name: "github",
+            type: "url"
+        },
+        {
+            name: 'image',
+            title: 'Image',
+            type: 'image',
+            options: {
+              hotspot: true,
+            },
+        },
+        {
             name: "tags",
             type: "array",
             of: [
@@ -47,5 +59,11 @@ export default {
                 layout: "tags",
             },
         },
-    ]
+    ],
+    preview: {
+        select: {
+          title: 'title',
+          media: 'image',
+        },
+      },
 }

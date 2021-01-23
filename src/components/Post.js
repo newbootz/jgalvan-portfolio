@@ -22,10 +22,10 @@ export default function Post() {
             .catch(console.error);
     }, []);
     return (
-        <main className="bg-indigo-200 min-h-sceen p-12">
-            <section className="container mx-auto my-auto my-8 min-h-sceen">
-                <h1 className="text-5xl flex justify-center cursive">Blog Post Page</h1>
-                <h2 className="text-lg text-indigo-600 flex justify-center mb-12">Welcome to my Blog Posts Page</h2>
+        <main className="bg-indigo-300 min-h-sceen p-12">
+            <section className="container mx-auto my-8 min-h-sceen">
+                <h1 className="text-5xl flex justify-center cursive text-indigo-900">Blog Post Page</h1>
+                <h2 className="text-lg text-indigo-600 flex justify-center mb-12">Welcome to my blog posts page!</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     { postData && postData.map((post, index) => (
                     <article>
