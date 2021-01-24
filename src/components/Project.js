@@ -13,6 +13,13 @@ export default function Project() {
             projectType,
             link,
             github,
+            image {
+                asset-> {
+                    _id,
+                    url
+                },
+                alt
+            },
             tags
         }`).then((data) => setProjectData(data)).catch(console.error);
     }, []);
@@ -43,13 +50,13 @@ export default function Project() {
                             </span>
                             <p className="my-6 text-lg text-white leading-relaxed">{project.description}</p>
                             <a 
-                            // href={project.link}
+                            href={project.github}
                             alt={project.title}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-green-300 font-bold hover:underline hover:text-red-400 text-xl"
                             >
-                                View project in GitHub {""}
+                               View on GitHub  {""}
                             <span><SocialIcon url={project.github} className="mr-4" target="_blank" fgColor="#fff" style={{ height: 35, width: 35}} /></span>
                             </a>
                         </div>
